@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+.cleanboth::after{
+  display: block;
+  content: ".";
+  height: 0;
+  visibility: hidden;
+  clear: both;
+  font-size: 0;
+  line-height: 0;
+}
+
+footer {
+    width: 100%;
+    height: 461px;
+    text-align: center;
+    /*  .f-top::after{    
+         display: block;
+         content: ".";
+         height: 0;
+         visibility: hidden;
+         clear: both;
+         font-size: 0;
+         line-height: 0;}
+         
+  */ }
+  
+    footer .f-top {
+      padding: 30px 0;
+      width: 1070px;
+      margin: 0 auto;
+      border-top: 1px solid #ebebeb; }
+      footer .f-top .top-top {
+        margin-right: 81px !important;
+        width: 185px;
+        margin-left: 0px !important;
+        display: block;
+        overflow: hidden;
+        margin: 0 51px;
+        float: left; }
+        footer .f-top .top-top img {
+          float: left;
+          display: block;
+          width: 66px;
+          height: 66px;
+          margin-right: 15px; }
+        footer .f-top .top-top b {
+          display: block;
+          margin-top: 10px;
+          font-size: 16px;
+          color: #333; }
+        footer .f-top .top-top span {
+          font-size: 12px;
+          color: #999; }
+    footer .f-middle {
+      width: 1070px;
+      height: 192px;
+      margin: 0 auto;
+      padding: 20px 0; }
+      footer .f-middle .middle-one {
+        width: 780px;
+        height: 152px;
+        padding-left: 15px;
+        float: left;
+        font-size: 12px; }
+        footer .f-middle .middle-one dl {
+          width: 191px;
+          height: 152px;
+          float: left; }
+          footer .f-middle .middle-one dl dt {
+            height: 32px;
+            padding: 0 8px;
+            font-size: 14px;
+            color: #666;
+            line-height: 32px;
+            overflow: hidden;
+            font-family: "Microsoft YaHei";
+            color: #666;
+            font-weight: bold; }
+          footer .f-middle .middle-one dl dd {
+            height: 24px;
+            padding: 0 8px;
+            line-height: 24px;
+            overflow: hidden;
+            white-space: normal;
+            font-size: 12px; }
+      footer .f-middle .QR-code {
+        width: 280px;
+        overflow: hidden;
+        float: left; }
+        footer .f-middle .QR-code .QR-c {
+          float: left;
+          margin-right: 50px;
+          line-height: 32px;
+          font-size: 14px;
+          font-weight: bold;
+          color: #666; }
+    footer .f-bottom {
+      width: 100%;
+      height: 127px;
+      font-size: 12px;
+
+     }
+      footer .f-bottom .bottom-p {
+        color: #666;
+        text-align: center;
+        text-indent: 0;
+        line-height: 100%;
+        margin: 15px 0;
+        padding: 0; }
+        footer .f-bottom .bottom-p a {
+          text-align: center;
+          text-indent: 0;
+          line-height: 100%;
+          color: #333; }
+      footer .f-bottom .bottom-logo {
+        display: block;
+        padding: 10px 0 20px;
+        text-align: center;
+        font-size: 0;
+        width: 100%;
+        height: 31px; }
+        footer .f-bottom .bottom-logo a {
+          display: inline-block;
+          margin: 0 4px; }
+  

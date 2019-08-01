@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>1号店(yhd.com)_全球超市，轻松到家</title>
+    <!-- 运行的是dist里的代码，必须按照dist的目录结构来写路径，写成绝对路径，在 '/' 根路径下 -->
+    <link rel="stylesheet" href="/css/index.css">
+    <!-- 引入的是矢量图标 -->
+    <link rel="stylesheet" type="text/css" href="/libs/font/iconfont.css"/>
+    <!-- 引入轮播图的css、js插件 -->
+    <link rel="stylesheet" href="/libs/swiper/css/swiper.min.css">
+</head>
+<body>
+    <!-- 头部 -->
+    <header></header>
+    
+    <!-- 轮播图区域 -->
+    <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="http://img2.imgtn.bdimg.com/it/u=1244147403,617608265&fm=26&gp=0.jpg"></div>
+                <div class="swiper-slide"><img src="http://img0.imgtn.bdimg.com/it/u=4120819808,4008069386&fm=26&gp=0.jpg"></div>
+                <div class="swiper-slide"><img src="http://img2.imgtn.bdimg.com/it/u=1346598581,2845453899&fm=26&gp=0.jpg"></div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+    </div>
+
+    <!-- 新人会场 图片 -->
+    <div class="newMan-channel">
+            <a href="javascript:;" target="_blank">
+                <img src="./imgs/webPic/new man.png" alt="">
+            </a>
+    </div>
+        
+    <!-- 超级单品区域  -->
+    <div class="super_item">
+        <!-- 单品区域 -->
+        <div class="super-single" id="super-single">
+            <ul>
+                <li class="single-one">
+                <a href="javascript:;" target="_blank">
+                    <img src="./imgs/webPic/super_single-logo.png" alt="" class="single-logo">
+                    <div class="single-text">
+                        <span class="single-text-font">限时 限量 品质 超值</span>
+                        <span class="single-text-line"></span>
+                    </div>
+                    <div class="single-djs">
+                        <div class="djs-title">
+                                <i class="iconfont icon-daojishi" style="font-size:20px;position:relative;top:2px"></i>  
+                            <div class="s-text">距结束仅剩</div>
+                        </div>
+                        <div class="djs-time">
+                            <span class="time-hour" id="hours">7</span><i>:</i>
+                            <span class="time-minute" id="minutes">15</span><i>:</i>
+                            <span class="time-second" id="second">08</span>
+                        </div>
+                    </div>
+                </a>
+                </li>
+                
+                <div id="main-goods">
+                    
+                </div>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- 模板引擎 -->
+    <script type="text/html" id="limit-buy-template">
+        {{each list shop}}
+            <li class="single-normal"> 
+                <a href="/html/details.html?id={{shop.id}}" target="_blank">
+                    <div class="single-top">
+                        <div class="s_bz"></div>
+                        <img src="{{shop.img}}" target="_blank" class="single-top-img"> 
+                    </div>
+                    <div class="single-bottom">
+                        <div class="s-title">{{shop.title}}</div>
+                        <div class="s-bar">
+                            <div class="s-progress" style="width:59%"></div>
+                        </div>
+                        <div class="s-con">
+                            <div class="s-sum">
+                                <span class="s-sum-unit">￥</span>
+                                <span class="s-sum-act">{{shop.price}}</span>
+                                <span class="s-sum-underline">
+                                    <span class="s-sum-unit">￥</span>
+                                    <span class="s-sum-line">{{shop.limitprice}}</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        {{/each}}
+    </script>
+        
+        
+        <!-- 品牌区域 -->
+        <div class="brand_zone">
+            <!-- 超级品牌专区 -->
+            <div class="super_brand">
+                <div class="brand_l_top">
+                    <a href="javasrcipt:;">
+                        <span class="first">超级品牌</span>
+                        <span class="last">/&nbsp;超级品牌/精品汇聚</span>
+                    </a>
+                </div>
+                <div class="brand_l_middle">
+                    <a href="javascript:;" target="_blank">
+                        <img src="./imgs/webPic/baishi.jpg" alt="" class="middle_bgimg">
+                        <div class="middle_bgimg_nc"></div>
+                        <div class="logo">
+                                <img src="./imgs/webPic/baishi2.jpg">
+                        </div>
+                        <div class="brand_pinpai">
+                            <div class="pinpai_1">乐事</div>
+                            <div class="pinpai_2">节日特惠</div>
+                            <div class="pinpai_3">进入</div>
+                        </div>
+                        <div class="brand_sp_bg">
+                            <img src="./imgs/webPic/baishi3.jpg">                        
+                        </div>
+                        <div class="brand_sp_bg">
+                            <img src="./imgs/webPic/baishi4.jpg">                        
+                        </div>
+                            <div class="brand_sp_bg">
+                            <img src="./imgs/webPic/baishi5.jpg">                        
+                        </div>
+                    </a>
+                </div>
+                <div class="brand_l_bottom">
+                    <a href="javascript:;" target="_blank">
+                        <img src="./imgs/webPic/baishi.jpg" alt="" class="middle_bgimg">
+                        <div class="middle_bgimg_nc"></div>
+                        <div class="logo">
+                                <img src="./imgs/webPic/baishi2.jpg">
+                        </div>
+                        <div class="brand_pinpai">
+                            <div class="pinpai_1">乐事</div>
+                            <div class="pinpai_2">节日特惠</div>
+                            <div class="pinpai_3">进入</div>
+                        </div>
+                        <div class="brand_sp_bg">
+                            <img src="./imgs/webPic/baishi3.jpg">                        
+                        </div>
+                        <div class="brand_sp_bg">
+                            <img src="./imgs/webPic/baishi4.jpg">                        
+                        </div>
+                            <div class="brand_sp_bg">
+                            <img src="./imgs/webPic/baishi5.jpg">                        
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+            <!-- 超级品类专区  -->
+            <div class="super_kindss">
+                <div class="brand_l_top">
+                    <a href="javasrcipt:;">
+                        <span class="first">超级品类</span>
+                        <span class="last">/&nbsp;超级品类/精品汇聚</span>
+                    </a>
+                </div>
+                <div class="brand_l_middle">
+                    <a href="javascript:;" target="_blank">
+                        <img src="./imgs/webPic/baishi.jpg" alt="" class="middle_bgimg">
+                        <div class="middle_bgimg_nc"></div>
+                        <div class="logo">
+                                <img src="./imgs/webPic/baishi2.jpg">
+                        </div>
+                        <div class="brand_pinpai">
+                            <div class="pinpai_1">乐事</div>
+                            <div class="pinpai_2">节日特惠</div>
+                            <div class="pinpai_3">进入</div>
+                        </div>
+                        <div class="brand_sp_bg">
+                            <img src="./imgs/webPic/baishi3.jpg">                        
+                        </div>
+                        <div class="brand_sp_bg">
+                            <img src="./imgs/webPic/baishi4.jpg">                        
+                        </div>
+                            <div class="brand_sp_bg">
+                            <img src="./imgs/webPic/baishi5.jpg">                        
+                        </div>
+                    </a>
+                </div>
+                <div class="brand_l_bottom">
+                    <a href="javascript:;" target="_blank">
+                        <img src="./imgs/webPic/baishi.jpg" alt="" class="middle_bgimg">
+                        <div class="middle_bgimg_nc"></div>
+                        <div class="logo">
+                                <img src="./imgs/webPic/baishi2.jpg">
+                        </div>
+                        <div class="brand_pinpai">
+                            <div class="pinpai_1">乐事</div>
+                            <div class="pinpai_2">节日特惠</div>
+                            <div class="pinpai_3">进入</div>
+                        </div>
+                        <div class="brand_sp_bg">
+                            <img src="./imgs/webPic/baishi3.jpg">                        
+                        </div>
+                        <div class="brand_sp_bg">
+                            <img src="./imgs/webPic/baishi4.jpg">                        
+                        </div>
+                            <div class="brand_sp_bg">
+                            <img src="./imgs/webPic/baishi5.jpg">                        
+                        </div>
+                    </a>
+                </div>
+             </div>
+        </div>
+        
+        
+        
+        <!-- 详细分类 -->
+        <div class="YouWant">
+        <!-- 品质进口 -->
+            <div class="import">
+                <div class="import-left">
+                    <a href="javascript:;" target="_blank"  class="perfect-life">
+                        <span class="L-first" style="color:#B77347">品质进口</span>
+                        <span class="L-last" style="color:#cd9d7f;color:rgba(183,115,71,0.7)">/ 给你完美生活</span>
+                    </a>
+                    <div class="import-show">
+                        <img src="./imgs/webPic/thatgirl.jpg" alt="" class="show-girl">
+                        <div class="milk">
+                            <a href="javascript:;" target="_blank" class="kindofmilk">进口饼干</a>
+                            <a href="javascript:;" target="_blank" class="kindofmilk">进口牛奶</a>
+                            <a href="javascript:;" target="_blank" class="kindofmilk">进口水</a>
+                            <a href="javascript:;" target="_blank" class="kindofmilk">进口糖巧</a>
+                            <a href="javascript:;" target="_blank" class="kindofmilk">葡萄酒</a>
+                            <a href="javascript:;" target="_blank" class="kindofmilk">进口油</a>
+                        </div>
+                         <div class="import-pic">
+                        <a href="javascript:;" target="_blank" class="pic-1">
+                            <p class="p1">进口休闲零食</p>
+                            <p class="p2">爆款直降</p>
+                            <div class="buy-btn">点击进入</div>
+                            <img src="./imgs/webPic/import1.png" alt="" target="_blank">
+                        </a>
+                        <a href="javascript:;" target="_blank" class="pic-2">
+                            <p class="p3">进口饼干</p>
+                            <p class="p4">超值满减</p>
+                            <img src="./imgs/webPic/import2.jpg" alt="" target="_blank">
+                        </a>
+                        <a href="javascript:;" target="_blank" class="pic-3">
+                            <p class="p3">进口牛奶</p>
+                            <p class="p4">领券满减</p>
+                            <img src="./imgs/webPic/import3.jpg" alt="" target="_blank">
+                        </a>
+                        <a href="javascript:;" target="_blank" class="pic-4">
+                            <p class="p3">品质洋酒</p>
+                            <p class="p4">2件立减</p>
+                            <img src="./imgs/webPic/import4.jpg" alt="" target="_blank">
+                        </a>
+                        <a href="javascript:;" target="_blank" class="pic-5">
+                            <p class="p3">进口米面</p>
+                            <p class="p4">满减优惠</p>
+                            <img src="./imgs/webPic/9.jpg" alt="" target="_blank">
+                        </a>
+                        <a href="javascript:;" target="_blank" class="pic-6">
+                            <p class="p1">日本美妆</p>
+                            <p class="p2">低至5折</p>
+                            <div class="buy-btn">点击进入</div>
+                            <img src="./imgs/webPic/import5.png" alt="" target="_blank">
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- 尾部 -->
+    <footer></footer>
+    
+    <script src="/libs/swiper/js/swiper.min.js"></script>
+    <script src="/libs/require/require.js" data-main="/js/index.js"></script>
+</body>
+</html>

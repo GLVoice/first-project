@@ -1,0 +1,211 @@
+@import 'modules/base.scss';
+@import 'modules/header.scss';
+@import 'modules/footer.scss';
+
+
+.cleanboth::after{
+    display: block;
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+}
+
+.main{
+    padding: 26px 0 0;
+    // height: 429px;
+    .login{
+        font-size: 12px;
+        width: 980px;
+        margin: 0 auto;
+        // 登录框   
+        .userLogin{
+            position: relative;
+            float: right;
+            width: 400px;
+            padding: 45px 35px 0 35px;
+            background-color: #fff;
+            .login-pc{
+                width: 330px;
+                height: 358px;
+                .error_tips{
+                    position: absolute;
+                    top: 9px;
+                    left: 35px;
+                    width: 282px;
+                    height: 30px;
+                    overflow: hidden;
+                    padding: 0 10px 0 36px;
+                    border: 1px solid #e5debc;
+                    border-radius: 2px;
+                    // background: #fff7d1 url(../images/login.png?e829f75) no-repeat -324px -150px;
+                    line-height: 30px;
+                    color: #999;
+                }
+                .cleanboth{
+                    h3{
+                        float: left;
+                        font-size: 14px;
+                        color: #666;
+                        font-weight: bold;
+                        line-height: 30px;
+                    }
+                    a{
+                        float: right;
+                        line-height: 30px;
+                        color: #06c;
+                    }
+                }
+                .login-form
+                {
+                    position: relative;
+                    padding: 0 0 18px;
+                    .form-item-wrap{
+                        width: 330px;
+                        margin: 0 auto;
+                        .form-item{
+                            z-index: 101;
+                            border: 1px solid #aaa;
+                            position: relative;
+                            height: 54px;
+                            margin-bottom: 10px;
+                            padding: 14px 18px;
+                            background: #FFF;
+                            line-height: 24px;
+                            .user-ico{
+                                background: url(/imgs/webPic/jinglingtu.png) no-repeat -50px 4px;
+                                display: inline-block;
+                                width: 42px;
+                                vertical-align: middle;
+                                color: #666;
+                            }
+                            .ipt{
+                                width: 230px;
+                                height: 24px;
+                                padding-left: 3px;
+                                border: 0 none;
+                                line-height: 24px;
+                                vertical-align: middle;
+                                font-family: "Microsoft YaHei";
+                                font-size: 14px;
+                                outline: none;
+                                color: #ccc;
+                            }
+                            .password-ico{
+                                background: url(/imgs/webPic/jinglingtu.png) no-repeat -150px 4px;
+                                display: inline-block;
+                                width: 42px;
+                                vertical-align: middle;
+                                color: #666;
+                            }
+                        }
+                        // 空白div
+                        .verify_code{
+                            height: 52px;
+                            margin-bottom: 10px;
+                            padding: 0;
+                            border: 0 none;
+                        }
+                        .auto-login{
+                            position: relative;
+                            margin: 10px 0;
+                            line-height: 24px;
+                            min-height: 24px;
+                            .cleanboth{
+                                line-height: 24px;
+                                .uncheck{
+                                    float: left;
+                                    padding-left: 18px;
+                                    background: url(/imgs/webPic/jinglingtu.png) no-repeat -347px -261px;
+                                    color: #999;
+                                }
+                            }
+                            .forgot-pwd{
+                                position: absolute;
+                                right: 0;
+                                top: -10px;
+                                color: #999;
+                                margin: 10px 0;
+                                line-height: 30px;
+                            }
+                        }
+                        .login_btn{
+                            width: 330px;
+                            height: 52px;
+                            border: 0 none;
+                            border-radius: 3px;
+                            background: #ff3c3c;
+                            font-size: 16px;
+                            color: #FFF;
+                            cursor: pointer;
+                            text-shadow: 1px 1px 1px #ff7373;
+                            font-family: "Microsoft YaHei";
+                            line-height: 52px;
+                        }
+                    }
+                    .landing_wrap{
+                        position: relative;
+                        z-index: 10;
+                        p{
+                            padding: 15px 0;
+                            color: #666;
+                            font-size: 12px;
+                        }
+                        .cleanboth{
+                            width: 330px;
+                            height: 35px;
+                            .account{
+                                float: left;
+                                width: 230px;
+                                li{
+                                    float: left;
+                                    margin: 0 20px 0 0;
+                                    a{
+                                        display: inline-block;
+                                        width: 32px;
+                                        height: 35px;
+                                        font-size: 32px;
+                                        line-height: 35px;
+                                        color: #10a8ff;
+                                    }
+                                }
+                            }
+                            .unfold{
+                                float: right;
+                                display: block;
+                                line-height: 34px;
+                                width: 97px;
+                                color: #999;
+                                i{
+                                    display: inline-block;
+                                    width: 16px;
+                                    height: 26px;
+                                    margin-top: 4px;
+                                    margin-left: 5px;
+                                    background: url(/imgs/webPic/jinglingtu.png) no-repeat -200px 3px;
+                                    vertical-align: middle;
+                                }
+                                span{
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+        .pic{
+            margin-top: 45px;
+            width: 510px;
+            height: 315px;
+            float: left;
+            img{
+                width: 510px;
+                height: 315px;
+            }
+        }
+    }
+}

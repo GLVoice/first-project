@@ -1,0 +1,204 @@
+@import 'modules/base.scss';
+@import 'modules/header.scss';
+@import 'modules/footer.scss';
+
+.clearboth::after{
+    display: block;
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+}
+
+.register{
+    position: relative;
+    border-top: 1px solid #f4f4f4;
+    background: #fcfcfc;
+    padding: 30px 0 40px;
+    .register-bg{
+        position: absolute;
+        top: 27px;
+        left: 50%;
+        z-index: 120;
+        width: 1200px;
+        height: 500px;
+        margin-left: -600px;
+        background: url(/imgs/webPic/bg1.png) no-repeat;
+        opacity: .2;
+    }
+
+    .main{
+        position: relative;
+        z-index: 150;
+        width: 330px;
+        margin: 0 auto;
+        h4{
+            text-align: center;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 50px;
+            color: #333;
+        }
+        .register-form{
+            li{
+                position: relative;
+                min-height: 52px;
+                margin-top: 10px;
+                margin-right: -200px;
+                .same-item{
+                    position: relative;
+                    z-index: 2;
+                    width: 328px;
+                    height: 50px;
+                    border: 1px solid #dedede;
+                    border-radius: 3px;
+                    .inputsame{
+                        position: relative;
+                        z-index: 2;
+                        width: 288px;
+                        height: 20px;
+                        margin-top: 15px;
+                        padding: 0px 20px;
+                        background: 0;
+                        border: 0;
+                        outline: 0;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #666;
+                    }
+                    span{
+                        position: absolute;
+                        left: 20px;
+                        top: 0px;
+                        display: inline-block;
+                        height: 50px;
+                        font-size: 14px;
+                        line-height: 50px;
+                        color: #666;
+                    }
+                }
+                .y_regist_tips{
+                    opacity: 0;
+                    position: absolute;
+                    left: 348px;
+                    font-size: 12px;
+                    color: #fff;
+                    .tips{
+                        padding: 10px;
+                        background: #e4e4e4;
+                        i{
+                            position: absolute;
+                            left: -10px;
+                            top: 50%;
+                            z-index: 2;
+                            width: 0;
+                            height: 0;
+                            overflow: hidden;
+                            line-height: 0;
+                            margin-top: -5px;
+                            border-color: transparent #e4e4e4 transparent transparent;
+                            border-style: dashed solid dashed dashed;
+                            border-width: 5px;
+                            font-size: 0;
+                        }
+                        .tips-words{
+                            max-width: 160px;
+                            line-height: 20px;
+                            color: #666;
+                            font-size: 12px;
+                        }
+                    }
+                }
+                .agreement-words{
+                    height: 35px;
+                    font-size: 12px;
+                    line-height: 35px;
+                    color: #666;
+                    text-indent: 1em;
+                    a{
+                        color: #06c;
+                        text-decoration: none;
+                        font-size: 12px;
+                    }
+                }
+                .agreement-btn{
+                    display: block;
+                    width: 330px;
+                    height: 52px;
+                    background-color: #ff3c3c;
+                    font-size: 16px;
+                    line-height: 52px;
+                    color: #fff;
+                    text-align: center;
+                    border-radius: 2px;
+                }
+            }
+            .ishort{
+                position: relative;
+                min-height: 52px;
+                margin-top: 10px;
+                margin-right: -200px;
+                .ishort-1{
+                    width: 192px;
+                    position: relative;
+                    z-index: 2;
+                    float: left;
+                    height: 50px;
+                    border: 1px solid #dedede;
+                    border-radius: 3px;
+                    .ishort-input{
+                        width: 152px;
+                        position: relative;
+                        z-index: 2;
+                        height: 20px;
+                        margin-top: 15px;
+                        padding: 0px 20px;
+                        background: 0;
+                        border: 0;
+                        outline: 0;
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: #666;
+                    }
+                    .ishort-input{
+                        position: absolute;
+                        left: 20px;
+                        top: 0px;
+                        display: inline-block;
+                        height: 50px;
+                        font-size: 14px;
+                        line-height: 50px;
+                        color: #666;
+                    }
+                    .name-label{
+                        position: absolute;
+                        left: 20px;
+                        top: 0px;
+                        display: inline-block;
+                        height: 50px;
+                        font-size: 14px;
+                        line-height: 50px;
+                        color: #666;
+                    }
+                }
+                .ishort-a{
+                    position: relative;
+                    z-index: 2;
+                    width: 126px;
+                    height: 50px;
+                    margin-left: 10px;
+                    text-align: center;
+                    background-color: #57565f;
+                    line-height: 52px;
+                    color: #fff;
+                    cursor: default;
+                    border-radius: 2px;
+                    font-size: 14px;
+                    float: left;
+                }
+            }
+        }
+    }
+}

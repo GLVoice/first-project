@@ -1,0 +1,1149 @@
+@import 'modules/base.scss';
+@import 'modules/header.scss';
+@import 'modules/footer.scss';
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.uuuu {
+    width: 100%;
+    height: 350px;
+}
+
+/* 头部样式 */
+header {
+    min-width: 1070px;
+}
+
+.clearboth::after {
+    display: block;
+    content: ".";
+    height: 0;
+    visibility: hidden;
+    clear: both;
+    font-size: 0;
+    line-height: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 350px;
+    background: green;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+// 新人优惠
+.newMan-channel {
+    width: 1070px;
+    height: 110px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: pink;
+
+    img {
+        border: 0 none;
+    }
+}
+
+//超级单品区域
+.super_item {
+    background: 0;
+    width: 100%;
+    height: 444px;
+    margin-top: 20px;
+    position: relative;
+
+    .super-single {
+        position: relative;
+        width: 1070px;
+        margin: 0 auto;
+        height: 370px;
+        background: url(../imgs/webPic/super-single-bc.png);
+
+        ul {
+            width: 1050px;
+            height: 432px;
+            margin: 0 auto;
+            position: relative;
+            top: 10px;
+            margin: 0 10px;
+
+            li {
+                width: 210px;
+                height: 216px;
+                float: left;
+                font-size: 14px;
+            }
+
+            .single-one {
+                font-size: 14px;
+
+                a {
+                    .single-logo {
+                        width: 129px;
+                        height: 36px;
+                        margin-left: 20px;
+                        margin-top: 22px;
+                        cursor: pointer;
+                        border: 0 none;
+                    }
+
+                    .single-text {
+                        width: 180px;
+                        height: 40px;
+                        margin-left: 24px;
+                        position: relative;
+                        overflow: hidden;
+
+                        .single-text-font {
+                            font-size: 14px;
+                            color: rgba(255, 255, 255, 0.8);
+                            display: block;
+                            margin-right: 8px;
+                            height: 22px;
+                            float: left;
+                            font-weight: bold;
+                            cursor: pointer;
+                            box-sizing: border-box;
+                            overflow: hidden;
+                        }
+
+                        .single-text-line {
+                            border-bottom: 3px solid #fff;
+                            position: absolute;
+                            height: 1px;
+                            width: 28px;
+                            left: 0px;
+                            top: 27px;
+                        }
+                    }
+
+                    .single-djs {
+                        width: 137px;
+                        height: 66px;
+                        margin-left: 24px;
+                        margin-top: 10px;
+
+                        .djs-title {
+                            width: 100%;
+                            color: #fff;
+                            font-size: 16px;
+                            line-height: 26px;
+
+                            .s-text {
+                                height: 26px;
+                                width: 80px;
+                                color: #fff;
+                                font-size: 16px;
+                                line-height: 26px;
+                                float: left;
+                            }
+
+
+                        }
+
+                        .djs-time {
+                            height: 26px;
+                            font-size: 0;
+                            text-align: center;
+                            margin-top: 9px;
+
+                            span {
+                                display: inline-block;
+                                width: 35px;
+                                height: 35px;
+                                line-height: 35px;
+                                text-align: center;
+                                background-color: #161616;
+                                color: #fff;
+                                font-size: 20px;
+                                font-family: Tahoma;
+                                font-weight: bold;
+                                border-radius: 10px;
+                            }
+
+                            i {
+                                display: inline-block;
+                                width: 16px;
+                                height: 35px;
+                                line-height: 35px;
+                                text-align: center;
+                                font-size: 14px;
+                                font-weight: bold;
+                                color: #fff;
+                                position: relative;
+                                top: -3px;
+                                font-style: normal;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .single-normal {
+                background-color: #fff;
+                cursor: pointer;
+
+                a {
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+
+                    .single-top {
+                        width: 210px;
+                        height: 135px;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        text-align: center;
+                        position: relative;
+
+                        .s_bz {
+                            height: 24px;
+                            color: #fff;
+                            position: relative;
+                            top: 10px;
+                            line-height: 24px;
+                            display: inline-block;
+                            z-index: 1;
+                        }
+
+                        img {
+                            width: 110px;
+                            height: 110px;
+                            position: absolute;
+                            top: 15px;
+                            left: 50%;
+                            margin-left: -55px;
+                        }
+                    }
+
+                    .single-bottom {
+                        height: 81px;
+                        width: 150px;
+                        margin: 0 auto;
+                        position: relative;
+
+                        .s-title {
+                            width: 153px;
+                            height: 20px;
+                            text-align: center;
+                        }
+                        .s-bar {
+                            width: 150px;
+                            height: 6px;
+                            margin-top: 10px;
+                            background-color: #e2e2e2;
+                            border-radius: 100px;
+                        }
+                        .s-con {
+                            height: 33px;
+                            padding-top: 12px;
+                            position: relative;
+                            overflow: hidden;
+                            text-align: center;
+                        }
+                        .s-sum {
+                            display: inline-block;
+                            font-family: Tahoma, "Microsoft YaHei";
+                            color: #e50113;
+                            font-weight: bold;
+                            font-size: 14px;
+
+                            .s-sum-underline {
+                                text-decoration: line-through;
+                                font-size: 12px;
+                                color: #999;
+                                font-weight: normal;
+                                margin-left: 4px;
+                            }
+
+                            .s-sum-act {
+                                margin-left: -3px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+// 超级品牌
+.brand_zone {
+    width: 1070px;
+    height: 362px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    // 超级品牌
+    .super_brand {
+        width: 530px;
+        height: 100%;
+        margin-right: 10px;
+        background-color: #fff;
+        float: left;
+
+        .brand_l_top {
+            width: 490px;
+            height: 67px;
+            margin-left: 19px;
+            overflow: hidden;
+
+            .first {
+                height: 67px;
+                text-align: center;
+                line-height: 70px;
+                font-size: 26px;
+                color: #493188;
+                margin-right: 7px;
+                cursor: pointer;
+                max-width: 190px;
+                display: inline-block;
+                overflow: hidden;
+            }
+
+            .last {
+                display: inline-block;
+                overflow: hidden;
+                max-width: 208px;
+                height: 67px;
+                line-height: 76px;
+                font-size: 16px;
+                color: rgba(69, 52, 127, 0.7);
+                cursor: pointer;
+            }
+        }
+
+        .brand_l_middle {
+            width: 490px;
+            height: 130px;
+            margin-left: 20px;
+            position: relative;
+
+            .middle_bgimg {
+                width: 490px;
+                height: 130px;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+            }
+
+            .middle_bgimg_nc {
+                width: 490px;
+                height: 130px;
+                position: absolute;
+                opacity: .4;
+                background-color: #000;
+            }
+
+            .logo {
+                width: 50px;
+                height: 50px;
+                margin-left: 20px;
+                margin-top: 40px;
+                float: left;
+                cursor: pointer;
+                position: relative;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50px;
+                }
+            }
+
+            .brand_pinpai {
+                width: 140px;
+                height: 100%;
+                float: left;
+                position: relative;
+
+                .pinpai_1 {
+                    font-size: 18px;
+                    color: #fff;
+                    width: 100%;
+                    text-indent: 20px;
+                    height: 18px;
+                    margin-top: 25px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    line-height: 18px;
+                    overflow: hidden;
+                }
+
+                .pinpai_2 {
+                    text-indent: 20px;
+                    color: #fff;
+                    font-size: 16px;
+                    margin-top: 8px;
+                    height: 16px;
+                    line-height: 16px;
+                    overflow: hidden;
+                    width: 120px;
+                }
+
+                .pinpai_3 {
+                    width: 63px;
+                    height: 23px;
+                    border: 1px solid #fff;
+                    border-radius: 100px;
+                    margin-left: 20px;
+                    font-size: 14px;
+                    color: #fff;
+                    text-indent: 12px;
+                    line-height: 20px;
+                    margin-top: 15px;
+                    box-sizing: border-box;
+                    cursor: pointer;
+                }
+
+            }
+
+            .brand_sp_bg {
+                margin-top: 25px;
+                margin-right: 10px;
+                float: left;
+                width: 80px;
+                height: 80px;
+                background-color: #fff;
+                position: relative;
+
+                img {
+                    width: 60px;
+                    height: 60px;
+                    margin: 10px 10px 10px 10px;
+                    display: block;
+                }
+            }
+        }
+
+        .brand_l_bottom {
+            margin-top: 15px;
+            width: 490px;
+            height: 130px;
+            margin-left: 20px;
+            position: relative;
+
+            .middle_bgimg {
+                width: 490px;
+                height: 130px;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+            }
+
+            .middle_bgimg_nc {
+                width: 490px;
+                height: 130px;
+                position: absolute;
+                opacity: .4;
+                background-color: #000;
+            }
+
+            .logo {
+                width: 50px;
+                height: 50px;
+                margin-left: 20px;
+                margin-top: 40px;
+                float: left;
+                cursor: pointer;
+                position: relative;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50px;
+                }
+            }
+
+            .brand_pinpai {
+                width: 140px;
+                height: 100%;
+                float: left;
+                position: relative;
+
+                .pinpai_1 {
+                    font-size: 18px;
+                    color: #fff;
+                    width: 100%;
+                    text-indent: 20px;
+                    height: 18px;
+                    margin-top: 25px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    line-height: 18px;
+                    overflow: hidden;
+                }
+
+                .pinpai_2 {
+                    text-indent: 20px;
+                    color: #fff;
+                    font-size: 16px;
+                    margin-top: 8px;
+                    height: 16px;
+                    line-height: 16px;
+                    overflow: hidden;
+                    width: 120px;
+                }
+
+                .pinpai_3 {
+                    width: 63px;
+                    height: 23px;
+                    border: 1px solid #fff;
+                    border-radius: 100px;
+                    margin-left: 20px;
+                    font-size: 14px;
+                    color: #fff;
+                    text-indent: 12px;
+                    line-height: 20px;
+                    margin-top: 15px;
+                    box-sizing: border-box;
+                    cursor: pointer;
+                }
+
+            }
+
+            .brand_sp_bg {
+                margin-top: 25px;
+                margin-right: 10px;
+                float: left;
+                width: 80px;
+                height: 80px;
+                background-color: #fff;
+                position: relative;
+
+                img {
+                    width: 60px;
+                    height: 60px;
+                    margin: 10px 10px 10px 10px;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    // 超级品类
+    .super_kindss {
+        width: 530px;
+        height: 100%;
+        margin-right: 0px;
+        background-color: #fff;
+        float: left;
+
+        .brand_l_top {
+            width: 490px;
+            height: 67px;
+            margin-left: 19px;
+            overflow: hidden;
+
+            .first {
+                height: 67px;
+                text-align: center;
+                line-height: 70px;
+                font-size: 26px;
+                margin-right: 7px;
+                cursor: pointer;
+                max-width: 190px;
+                display: inline-block;
+                overflow: hidden;
+                color: #AC8602;
+
+            }
+
+            .last {
+                display: inline-block;
+                overflow: hidden;
+                max-width: 208px;
+                height: 67px;
+                line-height: 76px;
+                font-size: 16px;
+                color: #AC8602;
+                cursor: pointer;
+            }
+        }
+
+        .brand_l_middle {
+            width: 490px;
+            height: 130px;
+            margin-left: 20px;
+            position: relative;
+
+            .middle_bgimg {
+                width: 490px;
+                height: 130px;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+            }
+
+            .middle_bgimg_nc {
+                width: 490px;
+                height: 130px;
+                position: absolute;
+                opacity: .4;
+                background-color: #000;
+            }
+
+            .logo {
+                width: 50px;
+                height: 50px;
+                margin-left: 20px;
+                margin-top: 40px;
+                float: left;
+                cursor: pointer;
+                position: relative;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50px;
+                }
+            }
+
+            .brand_pinpai {
+                width: 140px;
+                height: 100%;
+                float: left;
+                position: relative;
+
+                .pinpai_1 {
+                    font-size: 18px;
+                    color: #fff;
+                    width: 100%;
+                    text-indent: 20px;
+                    height: 18px;
+                    margin-top: 25px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    line-height: 18px;
+                    overflow: hidden;
+                }
+
+                .pinpai_2 {
+                    text-indent: 20px;
+                    color: #fff;
+                    font-size: 16px;
+                    margin-top: 8px;
+                    height: 16px;
+                    line-height: 16px;
+                    overflow: hidden;
+                    width: 120px;
+                }
+
+                .pinpai_3 {
+                    width: 63px;
+                    height: 23px;
+                    border: 1px solid #fff;
+                    border-radius: 100px;
+                    margin-left: 20px;
+                    font-size: 14px;
+                    color: #fff;
+                    text-indent: 12px;
+                    line-height: 20px;
+                    margin-top: 15px;
+                    box-sizing: border-box;
+                    cursor: pointer;
+                }
+
+            }
+
+            .brand_sp_bg {
+                margin-top: 25px;
+                margin-right: 10px;
+                float: left;
+                width: 80px;
+                height: 80px;
+                background-color: #fff;
+                position: relative;
+
+                img {
+                    width: 60px;
+                    height: 60px;
+                    margin: 10px 10px 10px 10px;
+                    display: block;
+                }
+            }
+        }
+
+        .brand_l_bottom {
+            margin-top: 15px;
+            width: 490px;
+            height: 130px;
+            margin-left: 20px;
+            position: relative;
+
+            .middle_bgimg {
+                width: 490px;
+                height: 130px;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+            }
+
+            .middle_bgimg_nc {
+                width: 490px;
+                height: 130px;
+                position: absolute;
+                opacity: .4;
+                background-color: #000;
+            }
+
+            .logo {
+                width: 50px;
+                height: 50px;
+                margin-left: 20px;
+                margin-top: 40px;
+                float: left;
+                cursor: pointer;
+                position: relative;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50px;
+                }
+            }
+
+            .brand_pinpai {
+                width: 140px;
+                height: 100%;
+                float: left;
+                position: relative;
+
+                .pinpai_1 {
+                    font-size: 18px;
+                    color: #fff;
+                    width: 100%;
+                    text-indent: 20px;
+                    height: 18px;
+                    margin-top: 25px;
+                    font-weight: bold;
+                    cursor: pointer;
+                    line-height: 18px;
+                    overflow: hidden;
+                }
+
+                .pinpai_2 {
+                    text-indent: 20px;
+                    color: #fff;
+                    font-size: 16px;
+                    margin-top: 8px;
+                    height: 16px;
+                    line-height: 16px;
+                    overflow: hidden;
+                    width: 120px;
+                }
+
+                .pinpai_3 {
+                    width: 63px;
+                    height: 23px;
+                    border: 1px solid #fff;
+                    border-radius: 100px;
+                    margin-left: 20px;
+                    font-size: 14px;
+                    color: #fff;
+                    text-indent: 12px;
+                    line-height: 20px;
+                    margin-top: 15px;
+                    box-sizing: border-box;
+                    cursor: pointer;
+                }
+
+            }
+
+            .brand_sp_bg {
+                margin-top: 25px;
+                margin-right: 10px;
+                float: left;
+                width: 80px;
+                height: 80px;
+                background-color: #fff;
+                position: relative;
+
+                img {
+                    width: 60px;
+                    height: 60px;
+                    margin: 10px 10px 10px 10px;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+//详细分类
+// 品质进口
+.YouWant {
+    .import {
+        background-color: #fff;
+        width: 1070px;
+        margin: 0 auto;
+        margin-top: 20px;
+        height: 421px !important;
+
+        .import-left {
+            width: 899px;
+            height: 421px;
+            float: left;
+
+            .perfect-life {
+                height: 67px;
+                display: block;
+
+                .L-first {
+                    color: #B77347;
+                    margin-top: 17px;
+                    height: 35px;
+                    margin-left: 20px;
+                    font-size: 26px;
+                    display: inline-block;
+                    cursor: pointer;
+                    max-width: 190px;
+                    overflow: hidden;
+                }
+
+                .L-last {
+                    color: rgba(183, 115, 71, 0.7);
+                    margin-left: 8px;
+                    font-size: 16px;
+                    margin-top: 27px;
+                    height: 21px;
+                    cursor: pointer;
+                    display: inline-block;
+                    max-width: 208px;
+                    overflow: hidden;
+                    position: relative;
+                    top: -3px;
+                }
+            }
+
+            .import-show {
+                width: 900px;
+                height: 334px;
+                position: relative;
+                padding-left: 20px;
+
+                .show-girl {
+                    position: relative;
+                    width: 189px;
+                    height: 334px;
+                    float: left;
+                }
+
+                .milk {
+                    font-size: 14px;
+                    color: #fff;
+                    position: absolute;
+                    width: 176px;
+                    height: 90px;
+                    margin-left: 14px;
+                    top: 16px;
+
+                    .kindofmilk {
+                        background: rgba(255, 255, 255, 0.1) !important;
+                        border: 1px solid rgba(255, 255, 255, 0.61) !important;
+                        width: 74px;
+                        height: 23px;
+                        text-align: center;
+                        line-height: 23px;
+                        float: left;
+                        margin-right: 9px;
+                        margin-bottom: 9px;
+                        cursor: pointer;
+                        color: #fff;
+                        overflow: hidden;
+                    }
+                }
+
+                .import-pic {
+                    width: 680px;
+                    height: 334px;
+                    float: left;
+
+                    .pic-1 {
+                        width: 335px;
+                        height: 167px;
+                        position: relative;
+                        float: left;
+                        background-color: #faf7f6;
+                        cursor: pointer;
+
+                        .p1 {
+                            margin-top: 40px;
+                            color: #793a11;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            width: 150px;
+                            margin-left: 30px;
+                            font-size: 14px;
+                        }
+
+                        .p2 {
+                            color: #b77347;
+                            margin-top: 5px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            width: 150px;
+                            margin-left: 30px;
+                            font-size: 14px;
+                        }
+
+                        .buy-btn {
+                            width: 78px;
+                            height: 27px;
+                            text-align: center;
+                            line-height: 27px;
+                            margin-top: 15px;
+                            cursor: pointer;
+                            overflow: hidden;
+                            margin-left: 30px;
+                            font-size: 14px;
+                        }
+
+                        img {
+                            position: absolute;
+                            right: 30px;
+                            bottom: 27px;
+                            cursor: pointer;
+                            width: 110px;
+                            height: 110px;
+                        }
+                    }
+
+                    .pic-2 {
+                        border-right: 1px solid #f6f6f6;
+                        float: left;
+                        position: relative;
+                        width: 167px;
+                        height: 167px;
+                        cursor: pointer;
+
+                        .p3 {
+                            margin-left: 15px;
+                            font-size: 14px;
+                            overflow: hidden;
+                            height: 14px;
+                            width: 102px;
+                            line-height: 1;
+                            margin-bottom: 7px;
+                        }
+
+                        .p4 {
+                            color: #999;
+                            margin-left: 15px;
+                            font-size: 14px;
+                            margin-top: -1px;
+                            overflow: hidden;
+                            height: 14px;
+                            width: 102px;
+                            line-height: 1;
+                            margin-bottom: 7px;
+                        }
+
+                        img {
+                            position: absolute;
+                            width: 90px;
+                            height: 90px;
+                            bottom: 10px;
+                            right: 10px;
+                            margin-top: 15px;
+                            margin-left: 15px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .pic-3 {
+                        border-right: 1px solid #f6f6f6;
+                        float: left;
+                        position: relative;
+                        width: 167px;
+                        height: 167px;
+                        cursor: pointer;
+
+                        .p3 {
+                            margin-left: 15px;
+                            font-size: 14px;
+                            overflow: hidden;
+                            height: 14px;
+                            width: 102px;
+                            line-height: 1;
+                            margin-bottom: 7px;
+                        }
+
+                        .p4 {
+                            color: #999;
+                            margin-left: 15px;
+                            font-size: 14px;
+                            margin-top: -1px;
+                            overflow: hidden;
+                            height: 14px;
+                            width: 102px;
+                            line-height: 1;
+                            margin-bottom: 7px;
+                        }
+
+                        img {
+                            position: absolute;
+                            width: 90px;
+                            height: 90px;
+                            bottom: 10px;
+                            right: 10px;
+                            margin-top: 15px;
+                            margin-left: 15px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .pic-4 {
+                        border-right: 1px solid #f6f6f6;
+                        float: left;
+                        position: relative;
+                        width: 167px;
+                        height: 167px;
+                        cursor: pointer;
+
+                        .p3 {
+                            margin-left: 15px;
+                            font-size: 14px;
+                            overflow: hidden;
+                            height: 14px;
+                            width: 102px;
+                            line-height: 1;
+                            margin-bottom: 7px;
+                        }
+
+                        .p4 {
+                            color: #999;
+                            margin-left: 15px;
+                            font-size: 14px;
+                            margin-top: -1px;
+                            overflow: hidden;
+                            height: 14px;
+                            width: 102px;
+                            line-height: 1;
+                            margin-bottom: 7px;
+                        }
+
+                        img {
+                            position: absolute;
+                            width: 90px;
+                            height: 90px;
+                            bottom: 10px;
+                            right: 10px;
+                            margin-top: 15px;
+                            margin-left: 15px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .pic-5 {
+                        border-right: 1px solid #f6f6f6;
+                        float: left;
+                        position: relative;
+                        width: 167px;
+                        height: 167px;
+                        cursor: pointer;
+
+                        .p3 {
+                            margin-left: 15px;
+                            font-size: 14px;
+                            overflow: hidden;
+                            height: 14px;
+                            width: 102px;
+                            line-height: 1;
+                            margin-bottom: 7px;
+                        }
+
+                        .p4 {
+                            color: #999;
+                            margin-left: 15px;
+                            font-size: 14px;
+                            margin-top: -1px;
+                            overflow: hidden;
+                            height: 14px;
+                            width: 102px;
+                            line-height: 1;
+                            margin-bottom: 7px;
+                        }
+
+                        img {
+                            position: absolute;
+                            width: 90px;
+                            height: 90px;
+                            bottom: 10px;
+                            right: 10px;
+                            margin-top: 15px;
+                            margin-left: 15px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .pic-6 {
+                        width: 335px;
+                        height: 167px;
+                        position: relative;
+                        float: left;
+                        background-color: #faf7f6;
+                        cursor: pointer;
+
+                        .p1 {
+                            margin-top: 40px;
+                            color: #793a11;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            width: 150px;
+                            margin-left: 30px;
+                            font-size: 14px;
+                        }
+
+                        .p2 {
+                            color: #b77347;
+                            margin-top: 5px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            width: 150px;
+                            margin-left: 30px;
+                            font-size: 14px;
+                        }
+
+                        .buy-btn {
+                            width: 78px;
+                            height: 27px;
+                            text-align: center;
+                            line-height: 27px;
+                            margin-top: 15px;
+                            cursor: pointer;
+                            overflow: hidden;
+                            margin-left: 30px;
+                            font-size: 14px;
+                        }
+
+                        img {
+                            position: absolute;
+                            right: 30px;
+                            bottom: 27px;
+                            cursor: pointer;
+                            width: 110px;
+                            height: 110px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

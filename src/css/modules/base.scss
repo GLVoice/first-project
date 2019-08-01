@@ -1,0 +1,26 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+    box-sizing: border-box;
+}
+fieldset,img{
+    border: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration:none;
+    color: #333333;
+}
+img{
+    vertical-align: middle;
+}
+fieldset,img{
+    border: 0;
+}
+select,button,input{
+    outline: none;
+}
