@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>详情页</title>
+    <link rel="stylesheet" href="/css/details.css">
+    <link rel="stylesheet" type="text/css" href="/libs/font/iconfont.css"/>
+</head>
+<body>
+    <!-- 头部 -->
+    <header></header>
+    
+    <!-- 商品详情页 -->
+    <main>
+        <div class="details" id="detail-box">
+                
+        </div>
+            <script type="text/html" id="detail-template">
+                <div class="wrap">
+                        <div class="bread-nav">
+                            <a href="/index.html">首页</a>
+                            <span>></span>
+                            AppleiPhone XR (A2108) 128GB 黑色
+                        </div>
+                        <div class="details-box">
+                            <div class="good-img" id="shop-imgs">
+                                <div class="big-img">
+                                    <!-- img的src里面放中图片，img的属性data-zoom-image放大图片-->
+                                    <img class="zoom-img img-responsive big" src="{{detail.imgs[0]}}" data-zoom-image="{{detail.imgs[0]}}" alt="服务器无响应" />
+                                </div>
+                                <div class="pic-list">
+                                    <a class ="prev" href=""><img src="/imgs/webPic/prev.png" ></a>
+                                    <div class="list" id="gal1">
+                                        <ul>
+                                            {{each detail.imgs img}}
+                                            <li>
+                                                <!-- img的src放小图片，a标签的data-image属性放对应的中图片，a标签的data-zoom-image属性放对应的大图片 -->
+                                                <a href="javascript:;" data-image="{{img}}" data-zoom-image="{{img}}">
+                                                    <img class="img-responsive small" src="{{img}}" alt="服务器无响应" />
+                                                </a>
+                                            </li>
+                                            {{/each}}
+                                        </ul>
+                                    </div>
+                                    <a class ="next" href=""><img src="/imgs/webPic/next.png" ></a>
+                                </div>
+                            </div>
+                            <div class="product-info" id="shop-argument">
+                                <div class="title">
+                                    <div class="label">1号店自营</div>
+                                    <div class="title-name">{{detail.name}}</div>
+                                </div>
+                                <div class="model">
+                                    <div class="left">{{detail.configuration}}</div>
+                                    <div class="right"><a href="">2019年Apple新品上市，期待吧！</a></div>
+                                </div>
+                                <div class="price">
+                                    <dl class="pre-price">
+                                        <dt>价格：</dt>
+                                        <dd>￥{{detail.price}}起</dd>
+                                    </dl>
+                                </div>
+                                <div class="distribution">
+                                    <dl class="region">
+                                        <dt>配送地址</dt>
+                                        <dd>
+                                            <a href="">{{detail.addr}}</a>
+                                            <br><span>现货</span><p>今天下午6点前完成支付，预计（2019.08.11）之前发货</p>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="choose">
+                                    <dl class="choose-top">
+                                        <dt>选择版本</dt>
+                                        <dd>{{detail.edition}}</dd>
+                                    </dl>
+                                    <dl class="choose-bottom">
+                                        <dt>选择类型</dt>
+                                        <dd>{{detail.type}}</dd>
+                                    </dl>
+                                    <dl>
+                                            <dt>选择颜色</dt>
+                                            <dd>{{detail.color}}</dd>
+                                        </dl>
+                                </div>
+                                <div class="pay">
+                                    <div class="all-price">
+                                        <span>总价：</span><span class="all-price-one">&nbsp;&nbsp;&nbsp;￥{{detail.price}}</span>
+                                    </div>
+                                    <div class="add"><a href="javascript:;" class="addCart" id="addCart">加入购物车</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </script>
+    </main>
+    <!-- 尾部 -->
+    <footer></footer>
+    
+    <script src="/libs/require/require.js" data-main="/js/details.js"></script>
+</body>
+</html>

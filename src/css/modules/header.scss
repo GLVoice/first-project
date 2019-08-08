@@ -126,6 +126,19 @@ header {
             border: 1px solid #e5e5e5;
             float: left;
             padding-left: 15px; }
+          header .search .search_main .search_search .keyWord .search-p{
+            position: absolute;
+            top: 30px;
+            left: -17px;
+            width: 500px;
+            z-index: 50000;
+          }
+          header .search .search_main .search_search .keyWord .search-p li{
+            background: #fff;
+            list-style: none;
+            cursor: pointer;
+            font-size: 14px;
+          }
           header .search .search_main .search_search .keyWord button {
             height: 34px;
             width: 50px;

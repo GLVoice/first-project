@@ -3,6 +3,7 @@ require(['./config'],()=>{
         class Index{
             constructor(){
                 this.swiper()
+                this.countDown()
                 this. getLimitBuy()
             }
             //轮播图
@@ -15,6 +16,26 @@ require(['./config'],()=>{
                         prevEl: '.swiper-button-prev',
                       },
                 })
+            }
+            //倒计时
+            countDown(){
+                var date = new Date();
+			    var startTime = date.getTime();
+                // 把表盘拨到23：59
+                date.setHours(23, 59, 20); 
+			    var endTime = date.getTime();
+			    var time = (endTime - startTime)/1000;
+			    var seconds = time % 60;
+                // 零散的秒数过滤掉
+                time -= seconds; 
+			    var minutes = time/60 % 60;
+                // 过滤掉分钟数所包含的秒数
+                time -= minutes*60; 
+                var hour = time/60/60;
+                $("#hours").html(hour);
+                $("#minutes").html(minutes);
+                $("#seconds").html(seconds);
+                setInterval(this.countDown, 1000);
             }
             // 限时抢购
             getLimitBuy(){
