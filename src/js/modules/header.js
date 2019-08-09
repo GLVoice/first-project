@@ -3,6 +3,7 @@ define(['jquery'],()=>{
         constructor(){
             this.load().then(()=>{
                 this.search()
+                this.list()
             })
         }
         
@@ -27,6 +28,25 @@ define(['jquery'],()=>{
                     })
                     $('#search-p').html(str)
                 })
+            })
+        }
+
+        // 下拉菜单
+        list(){
+            this.nav=$("#nav-allkind");
+            this.goodList=$("#goods-list");
+            this.nav.on('mousemove',()=>{
+                this.goodList.css("display","block");
+            })
+            this.nav.on('mouseleave',()=>{
+                this.goodList.css("display","none");
+            })
+            
+            this.goodList.on('mousemove',()=>{
+                this.goodList.css("display","block");
+            })
+            this.goodList.on('mouseleave',()=>{
+                this.goodList.css("display","none");
             })
         }
     }
